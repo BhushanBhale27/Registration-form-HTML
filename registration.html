@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        input[type=text],input[type=password],input[type=email],input[type=number]
+        {
+            width: 100%;
+            margin: 8px 0;
+            padding: 9px 15px;
+            display: inline-table;
+            border: 2px solid blue;
+            box-sizing: border-box;        
+        }
+        #address {
+            width: 100%;
+            margin: 8px 0;
+            padding: 9px 15px;
+            display: inline-table;
+            border: 2px solid blue;
+            box-sizing: border-box;  
+
+        }
+        #select {
+            width: 100%;
+            margin: 8px 0;
+            padding: 9px 15px;
+            display: inline-table;
+            border: 2px solid blue;
+            box-sizing: border-box;  
+
+        }
+
+    </style>
+</head>
+<body style="background-image: url(nature1.jpg); background-position: center;background-size: cover;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+    <h1 style="text-align: center;color: springgreen; background-color: green;">Registration Form</h1>
+    <form style="border: 3px solid; background-color: aqua; width: fit-content;">
+        <div style="padding :30px; background-color: aquamarine;">
+             <label>First Name : </label><br>
+               <input type="text" name="first-name" placeholder="First Name" maxlength="15" required>
+        <br>
+        <br>
+            <label>Last Name : </label><br>
+            <input type="text" name="last-name" placeholder="Last Name" maxlength="15" required>
+        <br>
+        <br>
+            <label>Your Education</label><br>
+            <input type="text" name="education" placeholder="Education" maxlength="10" required>
+        <br>
+        <br>
+        
+           <label required>Select Course</label>
+           <select id="select">
+            <option value="selectcourse">Click here : </option>
+            <option value="Frontend">Frontend development</option>
+            <option value="backend">Backend development</option>
+            <option value="fullstack">Full stack web development</option>
+            <option value="datascience">Data Science</option>
+            <option value="dataanalysis">Data Analysis</option>
+            <option value="blockchain">Blockchain</option>
+            <option value="iot">IOT</option>
+           </select>
+        <br>
+        <br>
+            <label>Select gender</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br>
+        <br>
+        <label>Phone</label>
+        <input type="text" name="coutry-code" value="+91" maxlength="3" required>
+        <input type="number" name="phone-no" placeholder="phone-no" maxlength="10" required>
+    
+        <br>
+        <br>
+
+        <label>Address :</label>
+        <br>
+        <textarea id="address" cols="80" rows="5" value="Address"></textarea>
+        <br>
+        <br>
+        <label>Upload your pan card photo : </label>
+        <input type="file" name="pan-card">
+        <br>
+        <br>
+        <label>Your Email : </label><br>
+        <input type="email" id="email" name="email" placeholder="Start Writing" required>
+        <br>
+        <br>
+        <label>New Password : </label><br>
+        <input type="password" id="pass" name="password" required>
+        <br>
+        <label>Rewrite Password : </label><br>
+        <input type="password" name="rewritepassword" required>
+
+        <br>
+        <br>
+        <button>Submit</button>
+
+    
+
+
+
+
+        </div>
+    </form>
+</body>
+</html>
